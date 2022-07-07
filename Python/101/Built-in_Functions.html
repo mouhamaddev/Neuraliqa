@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Website menu 09</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="../../css/style.css">
+
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside style="overflow: scroll;" id="colorlib-aside" role="complementary" class="js-fullheight">
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li><a href="../../index.html">Neuraliqa</a></li>
+
+					<li><a href="Introduction.html">Introduction</a></li>
+					<li><a href="Get_Started.html">Get started</a></li>
+					<li><a href="Variables_And_Datatypes.html">Variables and Datatypes</a></li>
+					<li><a href="Basic_Operations.html">Basic Operations</a></li>
+					<li><a href="Comments.html">Comments</a></li>
+					<li><a href="Inputs.html">Inputs</a></li>
+					<li><a href="Conditional_Statements.html">Conditional Statements</a></li>
+					<li><a href="Increment_Operation.html">Increment Operation</a></li>
+					<li><a href="Lists.html">Lists</a></li>
+					<li><a href="Tuples.html">Tuples</a></li>
+					<li><a href="Sets.html">Sets</a></li>
+					<li><a href="Dictionaries.html">Dictionaries</a></li>
+					<li><a href="For_Loop.html">For Loop</a></li>
+					<li><a href="While_Loop.html">While Loop</a></li>
+					<li><a href="Functions.html">Functions</a></li>
+					<li><a href="Try_Except.html">Try Except</a></li>
+					<li><a href="OOPs.html">OOPs</a></li>
+					<li><a href="Inheritance.html">Inheritance</a></li>
+					<li><a href="Recursion.html">Recursion</a></li>
+					<li><a href="Lambda.html">Lambda</a></li>
+					<li><a href="Regular_Expressions.html">Regular Expressions</a></li>
+					<li class="colorlib-active"><a href="Built-in_Functions.html">Built-in Functions</a></li>
+					<li><a href="Custom_Errors.html">Custom Errors</a></li>
+				</ul>
+			</nav>
+		</aside> <!-- END COLORLIB-ASIDE -->
+
+		<div id="colorlib-main">
+			<section class="ftco-section pt-4 mb-5 ftco-intro">
+				<div class="container-fluid px-3 px-md-0">
+					<div class="row">
+						
+
+
+
+
+						<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Built-in Functions</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="ad23ea10-d9c0-4558-bef1-6bd5e5a91c1f" class="page sans"><header><h1 class="page-title">Built-in Functions</h1></header><div class="page-body"><p id="3e0703a0-0e84-4bce-ab69-2bc581dfd1c0" class="">
+</p><p id="be92ac0f-b068-4a54-a660-2a849cdf4116" class="">Python 3, there are 68 built-in functions.</p><p id="ecf53def-82f4-4c63-991e-1906662007e8" class="">Here is the list of Python built-in functions in alphabetical order :</p><p id="d0222234-765c-48d8-86fd-1ba1b9ba28ad" class="">
+</p><p id="568c2a0b-7955-4d5c-9407-d068fa53ae2d" class=""><strong>__import__( )</strong></p><p id="5418c77c-939b-4dc9-8519-d0c9391e2c43" class="">This is an advanced function which is invoked when we use the import statement.</p><hr id="4d16e358-f646-4ec6-98f5-8a2bb3daf9c8"/><p id="0d32faee-fb46-4e97-8428-14dc7cde3a96" class=""><strong>abs( )</strong></p><p id="bc804e8c-a198-463c-a64d-7e72000c02f7" class="">Returns the absolute value of a number. If the argument is a complex number, its magnitude is returned.</p><hr id="5b272ce8-d7f0-4725-a882-0c8c8d2a5700"/><p id="1f069cf2-d6cf-4a52-b5dc-9daac56f5adc" class=""><strong>all( )</strong></p><p id="23d47f94-a638-4744-b20e-8f0b3cfccde6" class="">Returns True if all elements of the iterable are true or if the iterable is empty.</p><hr id="98eaa636-5f5e-4b29-acb7-72bff807b870"/><p id="b8e21874-fbaf-4f8c-8556-7e15be7ae575" class=""><strong>any(iterable)</strong></p><p id="c03fc1bd-04de-4ed7-aca7-c07b1b62c4b0" class="">Returns  if any element of the  is true.</p><hr id="eda644e4-1111-4409-ad9e-f9847880ec43"/><p id="33df46c7-ce6e-4c2b-aad2-d3c3209ca2f0" class=""><strong>ascii( )</strong></p><p id="1a86b6db-a1b8-4328-a838-aaaf264666e8" class="">It returns printable version of string ‘str’.</p><hr id="874254ee-a4df-4e1e-aaec-f3ce280645a0"/><p id="f6595418-7e03-4d54-a927-a0baa3913d32" class=""><strong>bin( )</strong></p><p id="12e1ba17-26ac-495f-8cde-5a1f5e308139" class="">Converts an integer number to a binary string.</p><hr id="3538678e-f460-4413-a3b5-c08ee0eb1241"/><p id="c1e66596-3b71-41db-9a5b-cdacb63f0ec7" class=""><strong>bool( )</strong></p><p id="9cafda59-3118-4601-ab2b-b2104dd3897a" class="">Converts a value to a Boolean, using the standard truth testing procedure.</p><hr id="d171c72c-bb73-47f0-aa54-844772f0ac8e"/><p id="ca423720-a67d-4f2c-b219-0a3d687f94c6" class=""><strong>bytearray( )</strong></p><p id="9b431582-cc00-45cd-8940-2749423109d1" class="">Returns an array of given byte size. The bytearray type is a mutable sequence of integers in the range 0 &lt;= x &lt; 256.</p><hr id="6da72bb8-1077-4c4d-8d25-1d1894195c51"/><p id="50bdcffd-636e-44c6-8af6-144facc058b4" class=""><strong>bytes( )</strong></p><p id="e40b7e92-a9fe-4cc3-800c-b11f6690165c" class="">Return a new bytes object, which is an immutable sequence of integers in
+ the range 0 &lt;= x &lt; 256. It is an immutable version of bytearray.</p><hr id="8e37e945-7c9e-4337-8a1c-5bb7ac24e59a"/><p id="240b6277-3331-4dcc-b71e-9b9a4b4385dd" class=""><strong>callable( )</strong></p><p id="87eb3a24-82f0-4b37-b5b2-c8030071e7b9" class="">Checks if the object is Callable. Returns  if the  argument appears callable,  if not.</p><hr id="e86d5b57-c8ef-40d2-8875-35f00ac13249"/><p id="3038a8cc-fedc-4aee-8af7-0338c23ef901" class=""><strong>chr(i)</strong></p><p id="a7f595d1-3992-4b7f-834e-8ded6e6db122" class="">Returns the string of one character whose Unicode codepoint is the integer i. For example, chr(98) returns the string ‘b’.</p><hr id="30c226bd-7ed6-4609-ab2e-afa3e4aad452"/><p id="f3b3bfbb-4c77-4fca-8140-cc627f7576e6" class=""><strong>classmethod( )</strong></p><p id="a1c15814-b848-4fe6-ba71-64ee743aaf88" class="">Returns a class method for a function. A class method receives the class
+ as implicit first argument, just like an instance method receives the 
+instance.</p><hr id="c633e2c5-43ad-416f-a206-489532c0dc38"/><p id="013cded9-6653-4b0a-81d4-643f0af2f5f2" class=""><strong>compile()</strong></p><p id="fc832b94-350e-4f7a-bf26-346a1af708ad" class="">Returns a Python code object. Compiles the source into a code or AST (Abstract Syntax Tree) object.</p><hr id="bbd1bfac-44a7-4189-82bf-bae894e04ebe"/><p id="31bb41ea-6723-4e09-b22d-e2b9ac7c3cda" class=""><strong>complex()</strong></p><p id="5c681d15-7197-4a5c-959f-8c05d401b595" class="">Creates a complex number.</p><hr id="55871fdb-7c84-4cb8-aa1e-41d2f0284b4c"/><p id="2cb29bcc-a0c1-438b-b6ac-2e27482b7391" class=""><strong>delattr( )</strong></p><p id="f09e5fa8-166a-4add-a376-769e1fa783af" class="">Deletes attribute from the object. It deletes the named attribute, provided the object allows it.</p><hr id="ee84106e-6607-4a31-a09b-5cff350bbfed"/><p id="6ff33dc5-3f57-44f1-aded-05a9ce034015" class=""><strong>dict()</strong></p><p id="635880e1-e337-4be2-afcb-2b7becf07133" class="">Creates a dictionary.</p><hr id="b72ddc44-52e7-4af9-bb34-9f716508bee7"/><p id="ada84afa-3cbd-4227-a893-6cda1f945472" class=""><strong>dir( )</strong></p><p id="31fbfeb3-5e17-4cd3-a47a-359afad5c24e" class="">It tries to return attributes of the object. Without arguments, returns 
+the list of names in the current local scope. With an argument, attempts
+ to return a list of valid attributes for that object.</p><hr id="eed555ba-6897-4ab5-86b3-dbb48d586736"/><p id="06984e0a-e3fd-4c1b-b907-7cf065690cf7" class=""><strong>divmod(a, b)</strong></p><p id="f6d7f806-841e-47f7-bfe2-5b0fced5bc69" class="">Returns a tuple of quotient and remainder.</p><hr id="b0b4f513-fe73-41d8-98f3-7ac8b9ceb2f6"/><p id="cfb1b565-af9c-4378-aa74-32730b70ceeb" class=""><strong>enumerate( )</strong></p><p id="b69f751c-acd2-4c61-9a53-a307f31bfeb2" class="">Returns an enumerate object for an iterable.</p><hr id="189e3424-3823-4f0f-a369-c7a4fbab83e4"/><p id="d93236eb-d85b-4dff-a996-156b768303ef" class=""><strong>eval()</strong></p><p id="b5c5a304-c9a3-4805-a58c-6e124de3df22" class="">The eval function lets a python program run python code within itself.</p><hr id="9e4ca123-3639-4a1e-9335-acb39a9880e6"/><p id="bcf8c930-3cfa-4cca-a533-a24626932059" class=""><strong>exec()</strong></p><p id="86a1a137-dc37-495f-8c7c-0ba6794d90db" class="">Executes dynamically created program. It supports dynamic execution of a Python code.</p><hr id="e24f2021-a1d2-42bb-b00e-e7f4e1e990e0"/><p id="854cf4c7-5f27-4db2-883b-c4b4c0d4d87c" class=""><strong>filter( )</strong></p><p id="6849e1f8-7975-4a98-8890-564301b2aefb" class="">It constructs iterator from elements of an iterable for which function returns true.</p><hr id="8142dcfb-9ed0-470c-9b7d-cd4d4731ff82"/><p id="38299355-41a7-4e71-b997-2f38ecd3adf7" class=""><strong>float( )</strong></p><p id="e1659bbc-e79a-4bae-a6e3-4aa596959c5a" class="">It converts a string or a number to floating point.</p><hr id="83b285e7-fe4f-4f9d-aef6-f504cf0d2c1c"/><p id="4c56160e-c30e-4b0e-beaa-bea8ad8378e2" class=""><strong>format( )</strong></p><p id="b2e6a10a-4011-4ed8-a9fa-03f9944f5dca" class="">Converts a value to a formatted representation i.e. it returns formatted representation of a value.</p><hr id="a4f5b67a-1f0d-45f1-b3a5-899553be4836"/><p id="9f5786b7-c9af-4b9b-b03b-c69c8e608b02" class=""><strong>frozenset( [iterable] )</strong></p><p id="040bfd92-8e0b-4cc7-8e2f-4e19bc890da6" class="">Return a frozenset object, optionally with elements taken from iterable.</p><hr id="7b3a2b83-3cfc-4c60-a8d4-38b93553bbd9"/><p id="ae30fc53-4eee-4161-94b2-28239f916d6f" class=""><strong>getattr( )</strong></p><p id="2b906a41-547e-418c-84ca-7e90a4a05bc2" class="">It returns the value of the named attribute of an object.</p><hr id="2b2e9737-f9bb-4ff1-b376-79679c5b1481"/><p id="c1b8dafc-90a1-4536-b166-14b1c56e5195" class=""><strong>globals( )</strong></p><p id="da456a45-a42c-4962-9287-888d95602cdc" class="">It returns a dictionary of the current global symbol table.</p><hr id="58cb9457-bda8-4b26-8f93-0f9e9957c1e2"/><p id="051f9bda-bfab-4ade-a4fc-c1d7f8506c4b" class=""><strong>hasattr( )</strong></p><p id="ae4b18de-edec-430c-8a36-ac5e92abb7cc" class="">Returns whether the object has named attribute or not.</p><hr id="102b8238-140c-48c2-bb1a-280159a580b6"/><p id="fc94c039-17f6-44d8-89d0-83a902525be5" class=""><strong>hash(object)</strong></p><p id="5321be6a-f735-4205-a1bf-3f893d1e665d" class="">Returns hash value of the object.</p><hr id="b034ca3d-cb9c-449c-96a9-ba81e24b0aac"/><p id="5eef0454-8224-4cc6-aa4c-fd0f046db62f" class=""><strong>help([object])</strong></p><p id="2881b51e-1e7d-4fbd-aa71-a91bbcbb1fba" class="">It invokes the built-in help system. If no argument is given, the 
+interactive help system starts on the interpreter console else a help 
+page on the object is generated.</p><hr id="c099d630-e9b8-4b0d-ba51-19e297f1ced2"/><p id="a993ebdc-01b7-466b-8cbc-2976b48240be" class=""><strong>hex( )</strong></p><p id="a81952ab-3401-4101-8194-fcd4c6e156b3" class="">Converts an integer to the corresponding hexadecimal number.</p><hr id="5ad585e2-d752-49d8-b3c5-4aa5dfd1f2ac"/><p id="cb202152-17c1-418d-9e3b-8b1f454995b2" class=""><strong>id(object)</strong></p><p id="74a2879c-978b-4326-97a5-ac25b22e052c" class="">It returns the identity of the object.</p><hr id="2c9f1cf7-3db4-45b7-ae52-e12bf2aecf87"/><p id="05022401-d2f2-4fb2-b038-196e52402223" class=""><strong>input( )</strong></p><p id="324ccc34-0684-48eb-9602-17093643765a" class="">It reads and returns a line of string.</p><hr id="090bcc80-6017-4615-9b6b-b3d84e59ebc9"/><p id="9b1c512f-c470-4d00-99cc-7413d9e01866" class=""><strong>int( )</strong></p><p id="33511c19-8040-43c4-a517-926b9a849b71" class="">Converts a number or string to an integer.</p><hr id="683e9bbc-0c1f-4f1a-b6d1-ccb8f90a47a5"/><p id="ed8d0a88-f4d9-4f1b-bc21-119c200a47b2" class=""><strong>isinstance( )</strong></p><p id="44a685af-f1b8-4a58-9cae-a328a185ce6c" class="">Checks if an object is an instance of the class. Return true if the object is an instance of the class.</p><hr id="79b3fa31-4198-4f87-b3f8-c0b295e280aa"/><p id="ce527435-247a-4c7c-ac87-e7c6374f9cf9" class=""><strong>issubclass(class, classinfo)</strong></p><p id="73fe7f4e-f130-4f61-bf7d-7536bfed325a" class="">Checks if a class is a subclass of another. Returns true if class is a subclass of the class classinfo.</p><hr id="04864dca-7244-4a69-b228-3b8ab6889aad"/><p id="3cf76a3f-9e6b-4c6b-8449-83d8a4cc03c6" class=""><strong>itr( )</strong></p><p id="f3bce019-a6a2-4304-985d-1b215a5b7d96" class="">It returns an iterator for an object.</p><hr id="59e9d81b-8d00-406b-aeea-376bc7a91f96"/><p id="2a082abd-3ba2-4d11-9114-3d38e24a9782" class=""><strong>len( )</strong></p><p id="8caa5062-cd1e-4e2d-8c11-a4ccbfe5c17f" class="">It returns length of the object.</p><hr id="2301d3f2-3386-4aa7-9eff-e4e2844b8da7"/><p id="59ef177a-7c9a-467f-b91e-42a1d1250e84" class=""><strong>list( )</strong></p><p id="942b2084-3809-4683-a572-151b12747517" class="">Used to create a list in Python.</p><hr id="61b3dd58-e9ed-44e5-89af-dfacc72f1313"/><p id="532c30a8-5509-424e-a547-d924f05e1619" class=""><strong>locals( )</strong></p><p id="df7b1f3a-36e5-473b-ad91-40373801a48d" class="">Updates and returns a dictionary representing the current local symbol table.</p><hr id="f62f3c64-8e00-4909-9d44-fbd887f36664"/><p id="9d77bfe6-7132-40c5-b1ca-fd0c1af3db78" class=""><strong>map( )</strong></p><p id="c111dca4-bc78-410c-938f-e042c7bf596e" class="">Returns an iterator that applies the function to every item of iterable, yielding the results.</p><hr id="1a606029-d614-43e4-8d16-d1b481e57f87"/><p id="6af96123-486a-4cd6-8dee-13f26e892e9e" class=""><strong>max( )</strong></p><p id="f1a100f3-81da-43c6-a22e-c55c8b18daa1" class="">Returns the largest item in the iterable.</p><hr id="5b5040c5-014c-4665-bb11-c247609d34d2"/><p id="335456bd-b443-4aaa-ad6f-5502e0549c03" class=""><strong>memoryview( )</strong></p><p id="4d68a72b-1c2a-4a1e-b607-b0ba38eee7fc" class="">returns memory view of an object supplied as an argument.</p><hr id="5dd657b7-d43d-4f1a-8ed7-2b336269098b"/><p id="33ae46f9-f109-4eea-94ad-9f5b6223c8a6" class=""><strong>min( )</strong></p><p id="bc6e5d26-5de0-42f1-ae96-e7f21315a238" class="">Returns the smallest item in the iterable.</p><hr id="5be949be-b288-4898-b881-cb5f0d2a700c"/><p id="8276c402-67f8-490e-bf4f-356fda5189fa" class=""><strong>next( )</strong></p><p id="789ae12d-4fb3-47db-b21a-c201816ca73d" class="">Retrieves the next item from the iterator by calling its  method.</p><hr id="b39d6c69-49cb-4b4b-9120-bc46cd957ea4"/><p id="a2fc69e5-8b2a-49f7-9256-ca2ecb504b6b" class=""><strong>object( )</strong></p><p id="072f0742-8198-47aa-a5b2-f8ef9949e51f" class="">Creates a new featureless object.</p><hr id="10fa862e-fed9-4dd8-a08a-7e34af319415"/><p id="64aadc26-9180-4e01-868f-c4fa38793635" class=""><strong>oct( )</strong></p><p id="ffad5a3c-0237-480d-b307-afa8130ca47e" class="">Converts an integer to an octal string.</p><hr id="8751e0e5-4a01-4c25-9db5-f5afde4d83d9"/><p id="1a0f0079-885d-409a-81ac-a194880bc10f" class=""><strong>open( )</strong></p><p id="da629d63-4a45-46e7-b30f-85633261f9d5" class="">Opens a file and return the corresponding stream.</p><hr id="e38091bd-bea9-4391-9e1f-42f95785083b"/><p id="49eedb42-04c6-41f4-bcc7-be9fa5a9cd5f" class=""><strong>ord( )</strong></p><p id="ff9793f9-447d-49c3-b10b-8993cbafc6db" class="">Returns an integer representing the Unicode code point of the character.</p><hr id="99a0a879-f05f-4591-92f6-9b21b45f1b9b"/><p id="14dd1219-f864-4d53-a82b-69b2ed8a418d" class=""><strong>pow( x, y)</strong></p><p id="ac1ce4ac-dce3-4d73-bb73-e132dbe3bab0" class="">Returns x to the power y.</p><hr id="d6848f0b-b61b-40e9-84d6-854414ce72b0"/><p id="4196e147-0f3f-40bc-bdc0-202fbd3e1f53" class=""><strong>print( )</strong></p><p id="eb6322d9-5fd9-4573-a685-515625dac71e" class="">Used to print the given object.</p><hr id="9cda2030-2f16-4130-8364-548c9dcb6bba"/><p id="2e6f8163-119a-4f36-841c-004258a398a1" class=""><strong>property( )</strong></p><p id="1221f40c-2372-4ad1-ae7d-bceaa488e0a3" class="">Returns the property attribute.</p><hr id="bcbedbfc-d938-4836-9afd-94a408bd5752"/><p id="30d81732-6f9d-4298-a262-4f48aaff04c2" class=""><strong>range( )</strong></p><p id="70429609-350c-4611-85ef-f93346498a88" class="">Returns a sequence of integers between given range.</p><hr id="51d066d5-3bae-4d64-ae0e-37d9857a4a08"/><p id="11ce3c1c-193f-4bc5-bfd0-5c32077f8cc3" class=""><strong>repr( )</strong></p><p id="c6182fb7-319b-4adc-bb6f-950b24f3557f" class="">It returns a string containing a printable representation of an object.</p><hr id="c2a02bfc-4990-40a0-a0d5-38552cbec57e"/><p id="de3e71b9-6971-4a7e-bc97-fdcd012b9f20" class=""><strong>reversed( )</strong></p><p id="02dd0527-fbe0-4bac-a036-c0c43551e26e" class="">Returns an iterable in reversed order.</p><hr id="3530636e-f57b-4f16-ab70-bb0991c6c566"/><p id="8a3e4cce-e65f-4dac-bcdf-d3111c94d8bf" class=""><strong>round(x[, n])</strong></p><p id="76b64304-dd7e-4ea3-9d0e-b6f7ecf55c40" class="">Returns the floating point value x rounded to n digits after the decimal point.</p><hr id="2f9e11d9-161f-4123-ae55-d81781f80ece"/><p id="7be2916f-ca59-4245-b0db-7bd9e443aa0f" class=""><strong>set( )</strong></p><p id="583cb3ca-5305-4a2a-a48f-14fe01125e7c" class="">Returns a new Python set.</p><hr id="806e8995-af99-4f1e-8ba7-aa3253f53583"/><p id="d9c62e6a-aac3-4482-8da3-549f5e465719" class=""><strong>setattr( )</strong></p><p id="0d7fbad5-cc23-4625-a3aa-783e7915e341" class="">Sets the value of an attribute of the object.</p><hr id="7ec5aff0-6f71-45f9-adb9-fa4b6bc0d4d5"/><p id="5b7d82a7-2673-48ac-b6d2-8e0d49bb8d2a" class=""><strong>slice( )</strong></p><p id="33ccd773-2e70-48db-b91b-5e53d44ecbb5" class="">Returns a slice object representing the set of indices specified by range(start, stop, step).</p><hr id="db4a140c-0d3e-44e3-bf36-d6b511821442"/><p id="f619d926-8210-4bb5-975a-6eed76c372b1" class=""><strong>sorted( )</strong></p><p id="fd2edede-09a5-4041-b29b-5c8b0765affd" class="">Returns sorted list from a given iterable.</p><hr id="a738170f-8bcc-49ff-9ad0-1ebeaa66469b"/><p id="d4b03d20-aa4a-4dad-b860-aa3c690e9ed8" class=""><strong>staticmethod( )</strong></p><p id="76d349de-9100-4d42-8115-70abe609941d" class="">It creates static method from a function.</p><hr id="b56af3a1-cfde-4cc6-8cc9-974537ddc541"/><p id="d0bc70dc-f8ce-44c8-a939-690af8583df1" class=""><strong>str( )</strong></p><p id="bd6f66ea-7824-42bf-a6fa-39a1528a745f" class="">Returns a string version of an object.</p><hr id="87e7ed40-5424-422d-95b9-a6a1eaeae460"/><p id="fa1d8dad-686e-46a0-95db-7bd832fb6bbf" class=""><strong>sum( )</strong></p><p id="8fbc581f-a027-4e2c-aa37-fd2c9d646179" class="">Adds items of an iterable from left to right and returns the total.</p><hr id="c33857d8-592b-4dec-af6d-2c440cdcb63d"/><p id="71509ead-192e-4d2f-ac9e-e4951a15fb9c" class=""><strong>super( )</strong></p><p id="bc3c9034-bf95-479b-868a-849e98311794" class="">Returns a proxy object that delegates method calls to a parent or sibling class.</p><hr id="dcdd3a1c-5155-4b0f-9b6f-deb21a2d7fc6"/><p id="39e8d1a4-6b71-4cbd-8bfa-bbad472c5853" class=""><strong>tuple( )</strong></p><p id="634c8208-ed4c-42ee-9cd4-7887546ebe10" class="">Creates a new tuple.</p><hr id="47e7ae37-1de8-4b44-95b4-77829f0e7598"/><p id="c4592002-c6cb-4a19-b9c2-68f4838f8f2f" class=""><strong>type( )</strong></p><p id="786ae6c8-9da2-42c7-b983-f00dfa66e597" class="">Returns the type of an object.</p><hr id="da571854-b290-4a10-92fd-144e3ed2c917"/><p id="9aa13451-d233-4cac-8722-8a401f9b6bf3" class=""><strong>vars( )</strong></p><p id="c9d44e1c-c87f-469a-bfaf-8f36ac1ee1cf" class="">Returns __dict__ attribute of a class.</p><hr id="4ae1186b-64d7-4d7e-b8ec-f38144d96e5b"/><p id="88979694-a070-40c5-9986-56177549b4fa" class=""><strong>zip( )</strong></p><p id="fe3ad406-f296-4df7-b920-8c41602785da" class="">Returns an iterator of tuples</p><hr id="73c9d3a2-60fa-40f5-844d-527b0c38b1fb"/></div></article></body></html>
+
+
+
+
+
+					</div>
+
+
+
+				</div>
+			</section>
+		</div><!-- END COLORLIB-MAIN -->
+
+
+	</div><!-- END COLORLIB-PAGE -->
+
+	</section>
+
+	<script src="../../js/jquery.min.js"></script>
+  <script src="../../js/popper.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/main.js"></script>
+
+	</body>
+</html>
+

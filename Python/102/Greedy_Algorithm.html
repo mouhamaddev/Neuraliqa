@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Greedy Algorithm</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="../../css/style.css">
+
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside style="overflow: scroll;" id="colorlib-aside" role="complementary" class="js-fullheight">
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li><a href="../../index.html">Neuraliqa</a></li>
+
+					<li>Intro to Algorithms</a></li>
+					<li><a href="Big_O_Notation.html">Big O Notation</a></li>
+					<li><a href="Types_Of_Algorithm.html">Types of Algorithm</a></li>
+					<li class="colorlib-active"><a href="Intro_To_Algorithms.html"><a href="Greedy_Algorithm.html">Greedy Algorithm</a></li>
+					<li><a href="Top_Algorithms.html">Top Algorithms</a></li>
+					<li><a href="Data_Structure_Types.html">Data Structure Types</a></li>
+					<li><a href="Array.html">Array</a></li>
+					<li><a href="Stacks.html">Stacks</a></li>
+					<li><a href="Queues.html">Queues</a></li>
+					<li><a href="Linked_lists.html">Linked lists</a></li>
+					<li><a href="Hash_Tables.html">Hash Tables</a></li>
+					<li><a href="Trees.html">Trees</a></li>
+					<li><a href="Graph.html">Graph</a></li>
+				</ul>
+			</nav>
+		</aside> <!-- END COLORLIB-ASIDE -->
+
+		<div id="colorlib-main">
+			<section class="ftco-section pt-4 mb-5 ftco-intro">
+				<div class="container-fluid px-3 px-md-0">
+					<div class="row">
+						
+
+
+
+
+						<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Greedy Algorithm</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="e0bf3ee6-673d-4cfe-a73a-f4645f6289e8" class="page sans"><header><h1 class="page-title">Greedy Algorithm</h1></header><div class="page-body"><p id="a36de7b4-bcb4-4a49-b74e-b3d01328495b" class="">
+</p><p id="ab0e97ac-ced4-42e4-a48d-3c5e41b61bac" class="">A greedy algorithm is a method of solving a problem that chooses the best solution available. It builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit.</p><p id="c8608bea-5a3e-45e4-9f53-95a83e3fb3c9" class="">Greedy algorithm is not concerned about whether the current best outcome will lead to the overall best result.</p><p id="e89aa1e3-6aba-40ed-b35d-83b64579b71e" class="">
+</p><p id="10ab04d1-6a37-4adc-afaf-4968ffa753d6" class="">Let’s give a real time example. John has some 5¢, 10¢, 20¢ and 25¢ coins.</p><figure id="7059b0d5-ec17-443f-874f-21dc256b1810" class="image"><a href="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/coins.png"><img style="width:1920px" src="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/coins.png"/></a></figure><p id="8f4207f3-17b2-4899-8200-a61bdceeaad3" class="">He is going to give Mike an amount of 30¢. So what a greedy algorithm is going to pick the minimal number of coins. It will look at the max value of a coin, which is 25¢ here, and pick one piece of it.</p><p id="5efc4b6b-6a19-4e14-af14-a89f9517f9a6" class="">Now we have 25¢ and we still need 5¢.</p><p id="21759861-917c-4b95-9d23-63443e437b56" class="">Then the greedy algorithm will look at the second max coin which is 20¢, and since 25¢ + 20¢ = 45¢ bigger than 30¢, so it will look at the second one which is 10¢. Same idea here. Then it will look at the 5¢ and pick it since 25¢ + 5¢ = 30¢.</p><p id="dcfd1429-7132-4aae-a0d3-c7e275e0d693" class="">
+</p><p id="56ba6a3e-2362-4373-afbe-80d20d5f6c11" class="">In this example, the greedy algorithm picked an amount of 30¢ with just two coins : 25¢ + 5¢, which is the minimum number of coin available.</p><p id="edea52c0-f9ac-4f64-8b3a-23e85b8721bb" class="">
+</p><p id="74f7b773-ace6-4a21-812f-05463928d235" class="">But, a greedy algorithm is not always the best idea to chose. Let’s give another example.</p><p id="78d821c6-e06b-4439-89b4-087f92483687" class="">In this example, John has the same coins, but he is going to give Mike 40¢.</p><figure id="58a6f56f-dbad-4ee1-a3cc-0259636c62e6" class="image"><a href="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/coins%201.png"><img style="width:1920px" src="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/coins%201.png"/></a></figure><p id="b6c27795-35a4-438e-a5ef-b02455f22ad4" class="">So a greedy algorithm will look at the max amount, which is 25¢, then 10¢, then 5¢.</p><p id="0359ec37-da37-4667-8a1f-87400b5da9cd" class="">And that’s 40¢ with 3 coins.</p><p id="00704ac2-ff9c-4368-82fb-508c86a09968" class="">Here is when a greedy algorithm fails to choose the smallest amount of coins, since we could have chosen two 20¢ coins and this is already a 40¢.</p><p id="c0e35715-e4aa-486d-a048-98394c2ce98c" class="">
+</p><p id="ccf82f4a-57ef-450b-bbfb-3d91c1404fa8" class="">Let’s implement the coin example in a python code :</p><pre id="8d67d569-c531-4a4d-967e-d5ac77ebb8c2" class="code"><code>def coinfunc(total, coins):
+    T = total
+    coins.sort()
+    index = len(coins)-1
+    while True:
+        coinValue = coins[index]
+        if T &gt;= coinValue:
+            print(coinValue)
+            T = T - coinValue
+        if T &lt; coinValue:
+            index -= 1
+        
+        if T == 0:
+            break
+
+coins = [5,10,20,25]
+coinfunc(40, coins)</code></pre><p id="9bb3aa2c-bdcf-469d-a867-997812fe98a3" class="">
+</p><p id="f31fb71e-da27-401c-878a-405c1ef8acd3" class="">
+</p><p id="52ea9ae5-e75a-4bb8-adfe-02b2bf69daf2" class="">Here is another example of a greedy algorithm :</p><figure id="258828ef-de0c-4483-936c-55481f1809fb" class="image"><a href="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/1.png"><img style="width:1080px" src="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/1.png"/></a></figure><p id="190e4995-b445-4f25-9c54-eeb1e3227564" class="">
+</p><p id="dafe28e2-3e2e-4af6-ac32-6a268014f715" class="">We will start from the node number 3, and our goal is to get the maximum score.</p><p id="c8812616-6c12-427e-938e-2e47b1b86e98" class="">
+</p><figure id="056b96ad-f418-4f8b-b30f-5b74c24b36d8" class="image"><a href="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/2.png"><img style="width:1080px" src="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/2.png"/></a></figure><p id="645ee363-6a2b-4ff6-890e-8546e70c1200" class="">
+</p><p id="8dfbe776-f5b3-459b-9980-63dbd9b469c0" class="">A greedy algorithm will choose a greedy choice between 3 and 8. 8 &gt; 3 so it will g for the 8.</p><p id="750c755b-c4c1-4c49-b2be-8002d081ee73" class="">
+</p><figure id="a879e669-941a-4aca-913a-42b00e7206ae" class="image"><a href="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/3.png"><img style="width:1080px" src="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/3.png"/></a></figure><p id="3e4c8187-ccd9-4875-ab39-5e66bb90072e" class="">
+</p><p id="1fed16cb-efb5-434f-8f00-24e0c16c8f7b" class="">Again, 11 and 7, it’s 11.</p><p id="4d8bac18-0a86-4c6b-81b2-9e69dbb7fd3d" class="">
+</p><figure id="cd9cfb7d-e23c-4507-936d-18447d30171f" class="image"><a href="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/4.png"><img style="width:1080px" src="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/4.png"/></a></figure><p id="401cefec-1a4a-41d1-9c82-ee9ef667a9fa" class="">
+</p><p id="9de3e56e-9d9d-4086-9981-1297be0460cf" class="">Now, if we sum up the values, we get 3 + 8 + 11 = 22.</p><p id="83c5b950-4f60-4eeb-bf7c-fbbd852cce1b" class="">Let’s try with human choices.</p><p id="d5ea4dc9-cafd-4d22-874b-7889442ec57a" class="">
+</p><figure id="2a1e0867-f5d9-4fe0-ad97-5b228234179f" class="image"><a href="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/5.png"><img style="width:1080px" src="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/5.png"/></a></figure><p id="384a37e7-9287-4c35-ad04-681888738a5c" class="">
+</p><p id="c26b6993-6920-4899-94cf-a68cb48456c3" class="">We will go for 4 instead of 8,</p><p id="8fd6bc52-7239-42a3-adec-e80ef955f5f1" class="">
+</p><figure id="1de967c8-841d-4601-aabf-d0e8945f58c7" class="image"><a href="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/6.png"><img style="width:1080px" src="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/6.png"/></a></figure><p id="dede959f-1702-4a65-9575-563ee95a10bd" class="">
+</p><p id="e9c389ce-baf3-4dc3-a4ca-3464d54efb6f" class="">and then 21.</p><p id="74a913c6-0ddc-4d31-96b5-6924435b2cd3" class="">
+</p><figure id="81938d20-341e-4ea7-b8a8-879c85989164" class="image"><a href="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/7.png"><img style="width:1080px" src="Greedy%20Algorithm%20e0bf3ee6673d4cfea73af4645f6289e8/7.png"/></a></figure><p id="848f1a24-b989-4d9f-9296-454894d603e2" class="">
+</p><p id="ed60f042-c64e-4aeb-b480-7423bedc850b" class="">If we sum the values here, we get 3 + 4 + 21 = 28.</p><p id="beb2a4f1-2cf2-42d7-90ec-c197ce69c910" class="">
+</p><p id="ef0f9d3f-a780-400a-a692-9a7b036349f0" class="">Note : A greedy algorithm is a simple, intuitive algorithm that is used in optimization problems. The algorithm makes the optimal choice at each step as it attempts to find the overall optimal way to solve the entire problem.</p></div></article></body></html>
+
+
+
+
+
+					</div>
+
+
+				</div>
+			</section>
+		</div><!-- END COLORLIB-MAIN -->
+
+
+	</div><!-- END COLORLIB-PAGE -->
+
+	</section>
+
+	<script src="../../js/jquery.min.js"></script>
+  <script src="../../js/popper.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/main.js"></script>
+
+	</body>
+</html>
+

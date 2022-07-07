@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Website menu 09</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="../../css/style.css">
+
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside style="overflow: scroll;" id="colorlib-aside" role="complementary" class="js-fullheight">
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li><a href="../../index.html">Neuraliqa</a></li>
+
+					<li><a href="Introduction.html">Introduction</a></li>
+					<li><a href="Get_Started.html">Get started</a></li>
+					<li><a href="Variables_And_Datatypes.html">Variables and Datatypes</a></li>
+					<li class="colorlib-active"><a href="Basic_Operations.html">Basic Operations</a></li>
+					<li><a href="Comments.html">Comments</a></li>
+					<li><a href="Inputs.html">Inputs</a></li>
+					<li><a href="Conditional_Statements.html">Conditional Statements</a></li>
+					<li><a href="Increment_Operation.html">Increment Operation</a></li>
+					<li><a href="Lists.html">Lists</a></li>
+					<li><a href="Tuples.html">Tuples</a></li>
+					<li><a href="Sets.html">Sets</a></li>
+					<li><a href="Dictionaries.html">Dictionaries</a></li>
+					<li><a href="For_Loop.html">For Loop</a></li>
+					<li><a href="While_Loop.html">While Loop</a></li>
+					<li><a href="Functions.html">Functions</a></li>
+					<li><a href="Try_Except.html">Try Except</a></li>
+					<li><a href="OOPs.html">OOPs</a></li>
+					<li><a href="Inheritance.html">Inheritance</a></li>
+					<li><a href="Recursion.html">Recursion</a></li>
+					<li><a href="Lambda.html">Lambda</a></li>
+					<li><a href="Regular_Expressions.html">Regular Expressions</a></li>
+					<li><a href="Built-in_Functions.html">Built-in Functions</a></li>
+					<li><a href="Custom_Errors.html">Custom Errors</a></li>
+				</ul>
+			</nav>
+		</aside> <!-- END COLORLIB-ASIDE -->
+
+		<div id="colorlib-main">
+			<section class="ftco-section pt-4 mb-5 ftco-intro">
+				<div class="container-fluid px-3 px-md-0">
+					<div class="row">
+						
+
+
+
+
+
+
+
+
+						<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Basic Operations</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="dc6b4cea-a6be-4bd6-abb8-b1ace59a618e" class="page sans"><header><h1 class="page-title">Basic Operations</h1></header><div class="page-body"><p id="2ad16eb4-d1b8-4de3-bd7e-b0db27d5f3f1" class="">
+</p><p id="b597161d-35e3-4320-9caf-b95f2deec2ef" class="">Operators are symbols which tells the interpreter to do a specific operation such as arithmetic, comparison, logical, and so on.</p><p id="93e27822-f120-423f-869f-91ccf48e1163" class="">
+</p><p id="c3cbbcdf-2bca-45a5-a8ba-6429d9b24405" class=""><strong>Python has 7 types of Operators :</strong></p><ul id="a7508fe7-9630-4e44-b24d-281c3028d989" class="bulleted-list"><li style="list-style-type:disc">Arithmetic Operator</li></ul><ul id="5ff67f9f-7671-46f4-b01c-e68849099b84" class="bulleted-list"><li style="list-style-type:disc">Comparison operators</li></ul><ul id="e399c4f1-9388-4c25-92cd-3b823cf6e960" class="bulleted-list"><li style="list-style-type:disc">Logical operators</li></ul><ul id="e22b9cfe-bbde-4790-8d0d-ef9c13973373" class="bulleted-list"><li style="list-style-type:disc">Bitwise operators</li></ul><ul id="ebc50730-d1da-46f5-852d-6a3b5c10d495" class="bulleted-list"><li style="list-style-type:disc">Assignment Operator</li></ul><ul id="d2285d2b-5da4-458a-8ece-8897b00b8a36" class="bulleted-list"><li style="list-style-type:disc">Identity operators</li></ul><ul id="6aef2fc1-f660-4597-a152-7cf1134e7ce5" class="bulleted-list"><li style="list-style-type:disc">Membership operators</li></ul><p id="fb6afac5-c9fd-4353-a0bc-317e94d88e76" class="">
+</p><h3 id="788dc41c-be11-465a-a7eb-6a07bbfe1ccc" class=""><strong>1) Arithmetic Operators</strong></h3><p id="f795913a-ce31-4527-841c-43c61b9e6814" class="">These Python arithmetic operators include Python operators for basic mathematical operations.</p><div id="38ed4b51-b4ab-456e-89bf-b4b7f9b30f41" class="collection-content"><h4 class="collection-title">Arithmetic Operators</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Operator Type</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Definition</th></tr></thead><tbody><tr id="bfbbc29a-c933-4694-803b-60a3d66d7aa8"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Arithmetic%20Operators%2038ed4b51b4ab456e89bfb4b7f9b30f41/+%20bfbbc29ac9334694803b60a3d66d7aa8.html">+</a></td><td class="cell-?K{&gt;">Addition operator</td></tr><tr id="0734bb87-c791-43ab-ae15-a2bfdc6232b8"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Arithmetic%20Operators%2038ed4b51b4ab456e89bfb4b7f9b30f41/-%200734bb87c79143abae15a2bfdc6232b8.html">-</a></td><td class="cell-?K{&gt;">Subtraction operator</td></tr><tr id="6a0f05b9-f870-49a7-92d2-22d378853de1"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Arithmetic%20Operators%2038ed4b51b4ab456e89bfb4b7f9b30f41/Untitled%206a0f05b9f87049a792d222d378853de1.html">*</a></td><td class="cell-?K{&gt;">Multiplication operator</td></tr><tr id="cbe4989d-f7f5-4b36-baf8-d7aa291f1e15"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Arithmetic%20Operators%2038ed4b51b4ab456e89bfb4b7f9b30f41/Untitled%20cbe4989df7f54b36baf8d7aa291f1e15.html">/</a></td><td class="cell-?K{&gt;">Division operator</td></tr><tr id="ac30df55-41e6-4a29-9e74-80c71470e1d0"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Arithmetic%20Operators%2038ed4b51b4ab456e89bfb4b7f9b30f41/%25%20ac30df5541e64a299e7480c71470e1d0.html">%</a></td><td class="cell-?K{&gt;">Reminder operator</td></tr><tr id="1ab609e6-3cc5-4ea2-8b39-73a6be88e3b4"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Arithmetic%20Operators%2038ed4b51b4ab456e89bfb4b7f9b30f41/Untitled%201ab609e63cc54ea28b3973a6be88e3b4.html">//</a></td><td class="cell-?K{&gt;">Divides and returns the value of the remainder.</td></tr><tr id="d2fe630a-abe5-447d-baf6-7ba4bd534bd5"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Arithmetic%20Operators%2038ed4b51b4ab456e89bfb4b7f9b30f41/Untitled%20d2fe630aabe5447dbaf67ba4bd534bd5.html">**</a></td><td class="cell-?K{&gt;">Raises the left operand to the power of right.</td></tr></tbody></table></div><pre id="77b475a8-bb27-4512-8ab0-ec317ce6b224" class="code"><code>x = 15
+y = 10
+
+print(&#x27;x + y =&#x27;, x+y)
+print(&#x27;x - y =&#x27;, x-y)
+print(&#x27;x * y =&#x27;, x*y)
+print(&#x27;x / y =&#x27;, x/y)
+print(&#x27;x % y =&#x27;, x%y)
+print(&#x27;x // y =&#x27;, x//y)
+print(&#x27;x ** y =&#x27;, x**y)
+
+&gt;&gt;&gt; x + y = 25
+&gt;&gt;&gt; x – y = 5
+&gt;&gt;&gt; x * y = 150
+&gt;&gt;&gt; x / y = 1.5
+&gt;&gt;&gt; x % y = 5
+&gt;&gt;&gt; x // y = 1
+&gt;&gt;&gt; x ** y = 576650390625</code></pre><p id="c9a63fc8-3c7f-44e2-8863-62c87431bf19" class="">
+</p><p id="c380542b-71ab-4bb1-b226-8c2f9c8f78c8" class="">
+</p><h3 id="cc4c2f1a-dc5e-4111-8c18-6e0c5fae34d7" class=""><strong><strong>2) Comparison Operators</strong></strong></h3><p id="22735e50-8ab1-4733-b57a-6b39465bb47a" class="">Comparison operators perform a comparison between two values. It returns a boolean True or False depending upon the result of the comparison.</p><div id="9d8e4682-57d5-45d5-ac89-dfe8008fc1b8" class="collection-content"><h4 class="collection-title">Comparison Operators</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Operators</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Definition</th></tr></thead><tbody><tr id="913734b4-6aa5-4d71-ba90-d4a83118390a"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Comparison%20Operators%209d8e468257d545d5ac89dfe8008fc1b8/Untitled%20913734b46aa54d71ba90d4a83118390a.html">&gt;</a></td><td class="cell-i}Qq">True if left operand is greater than the right</td></tr><tr id="05d1f54e-94ad-4236-8313-ff6e77a8f83c"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Comparison%20Operators%209d8e468257d545d5ac89dfe8008fc1b8/Untitled%2005d1f54e94ad42368313ff6e77a8f83c.html">&lt;</a></td><td class="cell-i}Qq">True if left operand is less than the right</td></tr><tr id="8a02e009-b613-4fba-a893-a717c44dd2bc"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Comparison%20Operators%209d8e468257d545d5ac89dfe8008fc1b8/==%208a02e009b6134fbaa893a717c44dd2bc.html">==</a></td><td class="cell-i}Qq">True if both operands are equal</td></tr><tr id="07832f22-95b0-48da-87dd-f53668606597"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Comparison%20Operators%209d8e468257d545d5ac89dfe8008fc1b8/!=%2007832f2295b048da87ddf53668606597.html">!=</a></td><td class="cell-i}Qq">True if operands are not equal</td></tr><tr id="2729ab46-8eb4-47f1-bf7d-b63d6ff2dd76"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Comparison%20Operators%209d8e468257d545d5ac89dfe8008fc1b8/=%202729ab468eb447f1bf7db63d6ff2dd76.html">&gt;=</a></td><td class="cell-i}Qq">True if left operand is greater than or equal to the right</td></tr><tr id="141bb5e6-9ecb-404a-b4ca-e1b643e703ee"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Comparison%20Operators%209d8e468257d545d5ac89dfe8008fc1b8/=%20141bb5e69ecb404ab4cae1b643e703ee.html">&lt;=</a></td><td class="cell-i}Qq">True if left operand is less than or equal to the right</td></tr></tbody></table></div><pre id="2c0eeb7f-383b-4e75-a0ae-631039841eb0" class="code"><code>x = 8
+y = 15
+
+print(&#x27;x&gt;y is&#x27;, x&gt;y)
+print(&#x27;x&lt; y is&#x27;,  x&lt;y)
+print(&#x27;x == y is&#x27;, x==y)
+print(&#x27;x != y is&#x27;, x!=y)
+print(&#x27;x &gt;= y is&#x27;, x&gt;=y)
+print(&#x27;x&lt;= y is&#x27;, x&lt;=y)
+
+&gt;&gt;&gt; x &gt; y is False
+&gt;&gt;&gt; x &lt; y is True
+&gt;&gt;&gt; x == y is False
+&gt;&gt;&gt; x != y is True
+&gt;&gt;&gt; x &gt;= y is False
+&gt;&gt;&gt; x &lt;= y is True</code></pre><p id="cf81e417-1b12-427d-9927-54a35160e6d8" class="">
+</p><p id="bc5d35b2-dd17-4652-9a75-1b127f897da7" class="">
+</p><p id="7f8b74a6-d4f5-447e-ba67-8b3ff3721cba" class="">
+</p><h3 id="c7505167-a1d5-48bd-ba6a-394fff63dfbc" class=""><strong><strong>3) Logical Operators</strong></strong></h3><p id="d0dc4804-4eab-451d-b6c8-212599f4ccf0" class="">Logical operators are used for performing AND, OR and NOT operations. It either returns True or False according to the condition.</p><div id="5872e7fc-273f-4468-ade6-1082572201e6" class="collection-content"><h4 class="collection-title">Logical Operators</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Operators</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Definitions</th></tr></thead><tbody><tr id="9b71cec3-1aa1-4718-bd57-07b7d4d71244"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Logical%20Operators%205872e7fc273f4468ade61082572201e6/and%209b71cec31aa14718bd5707b7d4d71244.html">and</a></td><td class="cell-ccyC">True if both the operands are true</td></tr><tr id="eaee191f-4782-433d-a855-d8a611b5baa3"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Logical%20Operators%205872e7fc273f4468ade61082572201e6/or%20eaee191f4782433da855d8a611b5baa3.html">or</a></td><td class="cell-ccyC">True if either of the operands is true</td></tr><tr id="085b6d40-03d3-4798-87e9-4a99c6485d6c"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Logical%20Operators%205872e7fc273f4468ade61082572201e6/not%20085b6d4003d3479887e94a99c6485d6c.html">not</a></td><td class="cell-ccyC">True if operand is false</td></tr></tbody></table></div><pre id="589ab3b0-cff2-4720-a6a1-a19b5ea5e423" class="code"><code>a = True
+b = False
+
+print(‘a and b is’, a and b)
+print(‘a or b is’, a or b)
+print(‘not a is’, not a)
+
+&gt;&gt;&gt; a and b is False
+&gt;&gt;&gt; a or b is True
+&gt;&gt;&gt; not a is False</code></pre><p id="d7b9e7c7-c76d-4420-9a07-bd0e7718f6ef" class="">
+</p><p id="3ec598cb-4616-4e85-b544-79e9ff988c75" class="">
+</p><p id="20e61e26-bf0f-4300-af1a-9d776e5311eb" class="">
+</p><h3 id="e831a002-c5be-4dd3-83b1-827428330632" class=""><strong><strong>4) Bitwise Operators</strong></strong></h3><p id="7bd6a2af-5341-4b3e-a628-cebd8a5995e6" class="">Bitwise operators operate on bits and perform bit by bit operation.</p><div id="f85438fe-3432-4f5c-909a-b97a77c8114b" class="collection-content"><h4 class="collection-title">Bitwise Operators</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Operators</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Definitions</th></tr></thead><tbody><tr id="dcff8a1c-4632-45e1-ae3d-b0cada81ef9e"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Bitwise%20Operators%20f85438fe34324f5c909ab97a77c8114b/&amp;%20dcff8a1c463245e1ae3db0cada81ef9e.html">&amp;</a></td><td class="cell-cijL">Bitwise AND</td></tr><tr id="0b66c28f-e2c4-4739-882b-938bcbc5c42f"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Bitwise%20Operators%20f85438fe34324f5c909ab97a77c8114b/Untitled%200b66c28fe2c44739882b938bcbc5c42f.html">|</a></td><td class="cell-cijL">Bitwise OR</td></tr><tr id="9b3ee545-103c-498c-b9e8-e7adddee5ba4"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Bitwise%20Operators%20f85438fe34324f5c909ab97a77c8114b/~%209b3ee545103c498cb9e8e7adddee5ba4.html">~</a></td><td class="cell-cijL">Bitwise NOT</td></tr><tr id="20738245-ba02-44ff-a1ba-5a91945c0df6"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Bitwise%20Operators%20f85438fe34324f5c909ab97a77c8114b/%5E%2020738245ba0244ffa1ba5a91945c0df6.html">^</a></td><td class="cell-cijL">Bitwise XOR</td></tr><tr id="68525897-95f5-42fc-8499-491e77ed7c57"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Bitwise%20Operators%20f85438fe34324f5c909ab97a77c8114b/Untitled%206852589795f542fc8499491e77ed7c57.html">&gt;&gt;</a></td><td class="cell-cijL">Bitwise right shift</td></tr><tr id="c6a542c4-75f2-4dae-827c-5b20d0b8b49d"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Bitwise%20Operators%20f85438fe34324f5c909ab97a77c8114b/Untitled%20c6a542c475f24dae827c5b20d0b8b49d.html">&lt;&lt;</a></td><td class="cell-cijL">Bitwise left shift</td></tr></tbody></table></div><h3 id="21987e6c-3232-4874-9773-b96c66f902d4" class=""><strong><strong>5) Assignment Operator</strong></strong></h3><p id="b4c26b9e-c271-48cb-aaae-e212bdd0a6d6" class="">An assignment operator is used to assign a value to a variable.</p><div id="ae9963e7-20a1-4b95-bc9e-88d83942af51" class="collection-content"><h4 class="collection-title">Assignment Operator</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Operators</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Definitions</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Output</th></tr></thead><tbody><tr id="c64d0123-c76a-486a-8a86-724287363ffe"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Assignment%20Operator%20ae9963e720a14b95bc9e88d83942af51/=%20c64d0123c76a486a8a86724287363ffe.html">=</a></td><td class="cell-f?}w">x = 15</td><td class="cell-jZok">x = 15</td></tr><tr id="478555b5-be67-4f1b-8e6c-0c57d84801bc"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Assignment%20Operator%20ae9963e720a14b95bc9e88d83942af51/+=%20478555b5be674f1b8e6c0c57d84801bc.html">+=</a></td><td class="cell-f?}w">x += 15</td><td class="cell-jZok">x = x + 15</td></tr><tr id="aa9bd621-48f1-4b48-9407-06a0101d34ad"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Assignment%20Operator%20ae9963e720a14b95bc9e88d83942af51/-=%20aa9bd62148f14b48940706a0101d34ad.html">-=</a></td><td class="cell-f?}w">x -= 15</td><td class="cell-jZok">x = x - 15</td></tr><tr id="dcecf4d9-cd86-4453-b9fe-1435fbed1094"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Assignment%20Operator%20ae9963e720a14b95bc9e88d83942af51/=%20dcecf4d9cd864453b9fe1435fbed1094.html">*=</a></td><td class="cell-f?}w">x *= 15</td><td class="cell-jZok">x = x * 15</td></tr><tr id="43e2510a-fb1f-4a17-9827-36b9b578f5df"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Assignment%20Operator%20ae9963e720a14b95bc9e88d83942af51/=%2043e2510afb1f4a17982736b9b578f5df.html">/=</a></td><td class="cell-f?}w">x /= 15</td><td class="cell-jZok">x = x / 15</td></tr><tr id="8cf91f4a-ab35-4c3b-bc6c-c75f8e62d0d9"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Assignment%20Operator%20ae9963e720a14b95bc9e88d83942af51/%25=%208cf91f4aab354c3bbc6cc75f8e62d0d9.html">%=</a></td><td class="cell-f?}w">x %= 15</td><td class="cell-jZok">x = x % 15</td></tr><tr id="36c1e22c-1641-4294-89c6-9fb94a9e7681"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Assignment%20Operator%20ae9963e720a14b95bc9e88d83942af51/=%2036c1e22c1641429489c69fb94a9e7681.html">//=</a></td><td class="cell-f?}w">x //= 15</td><td class="cell-jZok">x = x // 15</td></tr><tr id="05913470-e771-477f-9af0-235b619a09ba"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Assignment%20Operator%20ae9963e720a14b95bc9e88d83942af51/=%2005913470e771477f9af0235b619a09ba.html">**=</a></td><td class="cell-f?}w">x **= 15</td><td class="cell-jZok">x = x ** 15</td></tr><tr id="fcf6cde9-02c1-4bf2-876a-55893d8184b5"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Assignment%20Operator%20ae9963e720a14b95bc9e88d83942af51/&amp;=%20fcf6cde902c14bf2876a55893d8184b5.html">&amp;=</a></td><td class="cell-f?}w">x &amp;= 15</td><td class="cell-jZok">x = x &amp; 15</td></tr><tr id="dba2ada6-bc88-498f-84db-3d817d25fb8c"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Assignment%20Operator%20ae9963e720a14b95bc9e88d83942af51/=%20dba2ada6bc88498f84db3d817d25fb8c.html">|=</a></td><td class="cell-f?}w">x |= 15</td><td class="cell-jZok">x = x | 15</td></tr><tr id="9a5df2e6-f3b2-4518-a162-11d019820535"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Assignment%20Operator%20ae9963e720a14b95bc9e88d83942af51/%5E=%209a5df2e6f3b24518a16211d019820535.html">^=</a></td><td class="cell-f?}w">x ^= 15</td><td class="cell-jZok">x = x ^ 15</td></tr><tr id="4efe3296-16d8-4acd-b38d-1545390be9d6"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Assignment%20Operator%20ae9963e720a14b95bc9e88d83942af51/=%204efe329616d84acdb38d1545390be9d6.html">&gt;&gt;=</a></td><td class="cell-f?}w">x &gt;&gt;= 15</td><td class="cell-jZok">x = x &gt;&gt; 15</td></tr><tr id="8d1adf6f-d121-416b-89bf-219da0580af9"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Assignment%20Operator%20ae9963e720a14b95bc9e88d83942af51/=%208d1adf6fd121416b89bf219da0580af9.html">&lt;&lt;=</a></td><td class="cell-f?}w">x &lt;&lt;= 15</td><td class="cell-jZok">x = x &lt;&lt; 15</td></tr></tbody></table></div><p id="0674d2a8-5070-4424-a097-395532e642ea" class="">
+</p><p id="91b597a6-b446-491e-8e2c-6367d6d988d2" class="">
+</p><p id="6700c0c3-65d7-40fc-bf6e-73ca7ea58ee3" class="">
+</p><h3 id="66e43ec9-ca2d-4a92-986a-1d6dc5d2d054" class=""><strong><strong>6) Identity Operators</strong></strong></h3><p id="13212d32-5793-4e67-9af2-115b6da25cc7" class="">Python offers 2 types of identity operators i.e is and is not.</p><p id="32e3609d-58b5-4c5f-a4c8-a97188522d53" class="">Both are used to compare if two values are located on the same part of the memory. Two variables that are equal does not imply that they are identical.</p><div id="fb154d85-1162-4bf4-a07c-c38d35b6e455" class="collection-content"><h4 class="collection-title">Identity Operators</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Operators</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Definitions</th></tr></thead><tbody><tr id="d9ed5847-83c6-4cd1-984c-243ee581ee7f"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Identity%20Operators%20fb154d8511624bf4a07cc38d35b6e455/is%20d9ed584783c64cd1984c243ee581ee7f.html">is</a></td><td class="cell-=rOD">True if the operands are identical</td></tr><tr id="1161c96a-266b-413a-be6b-d26e585b574e"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Identity%20Operators%20fb154d8511624bf4a07cc38d35b6e455/is%20not%201161c96a266b413abe6bd26e585b574e.html">is not</a></td><td class="cell-=rOD">True if the operands are not identical</td></tr></tbody></table></div><p id="51cb122c-6d8c-47e4-a9d3-db7199ba660f" class="">
+</p><h3 id="1e1aa1aa-853d-4074-85c5-72489acd6116" class=""><strong><strong>7) Membership Operators</strong></strong></h3><p id="812d813e-f8c8-4e10-a689-5c8addae190c" class="">Python offers 2 types of membership operators i.e in and not in.</p><p id="31412bd4-38d8-41bf-b659-a2a14586c304" class="">Both are used to test whether a value or variable is in a sequence.</p><div id="4f026475-af2b-4d19-bc4e-fbff4b7c48c5" class="collection-content"><h4 class="collection-title">Membership Operators</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Operators</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Definitions</th></tr></thead><tbody><tr id="1cbba4b3-c49f-458d-8d03-1a4ac8ddaf04"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Membership%20Operators%204f026475af2b4d19bc4efbff4b7c48c5/in%201cbba4b3c49f458d8d031a4ac8ddaf04.html">in</a></td><td class="cell-pKQE">True if value is found in the sequence</td></tr><tr id="8494541f-2f02-4a34-9b6b-62015c262478"><td class="cell-title"><a href="Basic%20Operations%20dc6b4ceaa6be4bd6abb8b1ace59a618e/Membership%20Operators%204f026475af2b4d19bc4efbff4b7c48c5/not%20in%208494541f2f024a349b6b62015c262478.html">not in</a></td><td class="cell-pKQE">True if value is not found in the sequence</td></tr></tbody></table></div></div></article></body></html>
+
+
+
+
+					</div>
+
+
+					
+				</div>
+			</section>
+		</div><!-- END COLORLIB-MAIN -->
+
+
+	</div><!-- END COLORLIB-PAGE -->
+
+	</section>
+
+	<script src="../../js/jquery.min.js"></script>
+  <script src="../../js/popper.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/main.js"></script>
+
+	</body>
+</html>
+
